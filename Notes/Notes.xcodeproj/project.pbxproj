@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26F4C545276A02C8005E7156 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F4C541276A02C8005E7156 /* Note+CoreDataClass.swift */; };
+		26F4C546276A02C8005E7156 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F4C542276A02C8005E7156 /* Note+CoreDataProperties.swift */; };
+		26F4C547276A02C8005E7156 /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F4C543276A02C8005E7156 /* Folder+CoreDataClass.swift */; };
+		26F4C548276A02C8005E7156 /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F4C544276A02C8005E7156 /* Folder+CoreDataProperties.swift */; };
 		4B1B8EED27673CC4008FCE1D /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B8EEC27673CC4008FCE1D /* AlertView.swift */; };
-		4B1B8EF227674E8C008FCE1D /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B8EEE27674E8C008FCE1D /* Folder+CoreDataClass.swift */; };
-		4B1B8EF327674E8C008FCE1D /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B8EEF27674E8C008FCE1D /* Folder+CoreDataProperties.swift */; };
-		4B1B8EF427674E8C008FCE1D /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B8EF027674E8C008FCE1D /* Note+CoreDataClass.swift */; };
-		4B1B8EF527674E8C008FCE1D /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B8EF127674E8C008FCE1D /* Note+CoreDataProperties.swift */; };
 		4B1B8EFE276910F5008FCE1D /* ADDNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B8EFB276910F5008FCE1D /* ADDNoteView.swift */; };
-		4B1B8F00276910F5008FCE1D /* UpdateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B8EFD276910F5008FCE1D /* UpdateNoteView.swift */; };
+		4B1B8F00276910F5008FCE1D /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B8EFD276910F5008FCE1D /* NoteView.swift */; };
 		4BD81E3F275F70F4000F5BBE /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD81E3E275F70F4000F5BBE /* NotesApp.swift */; };
 		4BD81E41275F70F4000F5BBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD81E40275F70F4000F5BBE /* ContentView.swift */; };
 		4BD81E43275F70F5000F5BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD81E42275F70F5000F5BBE /* Assets.xcassets */; };
@@ -46,13 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26F4C541276A02C8005E7156 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		26F4C542276A02C8005E7156 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		26F4C543276A02C8005E7156 /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		26F4C544276A02C8005E7156 /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4B1B8EEC27673CC4008FCE1D /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
-		4B1B8EEE27674E8C008FCE1D /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4B1B8EEF27674E8C008FCE1D /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		4B1B8EF027674E8C008FCE1D /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4B1B8EF127674E8C008FCE1D /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4B1B8EFB276910F5008FCE1D /* ADDNoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADDNoteView.swift; sourceTree = "<group>"; };
-		4B1B8EFD276910F5008FCE1D /* UpdateNoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateNoteView.swift; sourceTree = "<group>"; };
+		4B1B8EFD276910F5008FCE1D /* NoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		4BD81E3B275F70F4000F5BBE /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD81E3E275F70F4000F5BBE /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		4BD81E40275F70F4000F5BBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,21 +95,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B1B8EF62767539F008FCE1D /* CoreDataClass$Properties */ = {
-			isa = PBXGroup;
-			children = (
-				4B1B8EEE27674E8C008FCE1D /* Folder+CoreDataClass.swift */,
-				4B1B8EEF27674E8C008FCE1D /* Folder+CoreDataProperties.swift */,
-				4B1B8EF027674E8C008FCE1D /* Note+CoreDataClass.swift */,
-				4B1B8EF127674E8C008FCE1D /* Note+CoreDataProperties.swift */,
-			);
-			path = CoreDataClass$Properties;
-			sourceTree = "<group>";
-		};
 		4BD81E32275F70F4000F5BBE = {
 			isa = PBXGroup;
 			children = (
-				4B1B8EF62767539F008FCE1D /* CoreDataClass$Properties */,
+				26F4C541276A02C8005E7156 /* Note+CoreDataClass.swift */,
+				26F4C542276A02C8005E7156 /* Note+CoreDataProperties.swift */,
+				26F4C543276A02C8005E7156 /* Folder+CoreDataClass.swift */,
+				26F4C544276A02C8005E7156 /* Folder+CoreDataProperties.swift */,
 				4BD81E3D275F70F4000F5BBE /* Notes */,
 				4BD81E4E275F70F6000F5BBE /* NotesTests */,
 				4BD81E58275F70F6000F5BBE /* NotesUITests */,
@@ -133,8 +125,8 @@
 				4BD81E3E275F70F4000F5BBE /* NotesApp.swift */,
 				4BD81E40275F70F4000F5BBE /* ContentView.swift */,
 				4BD81E71275F810A000F5BBE /* InFolderView.swift */,
+				4B1B8EFD276910F5008FCE1D /* NoteView.swift */,
 				4B1B8EFB276910F5008FCE1D /* ADDNoteView.swift */,
-				4B1B8EFD276910F5008FCE1D /* UpdateNoteView.swift */,
 				4B1B8EEC27673CC4008FCE1D /* AlertView.swift */,
 				4BD81E6D275F7150000F5BBE /* NotesView.swift */,
 				4BD81E6B275F7139000F5BBE /* TappedNoteView.swift */,
@@ -301,14 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F4C547276A02C8005E7156 /* Folder+CoreDataClass.swift in Sources */,
+				26F4C548276A02C8005E7156 /* Folder+CoreDataProperties.swift in Sources */,
 				4BD81E41275F70F4000F5BBE /* ContentView.swift in Sources */,
 				4BD81E72275F810A000F5BBE /* InFolderView.swift in Sources */,
-				4B1B8EF427674E8C008FCE1D /* Note+CoreDataClass.swift in Sources */,
-				4B1B8F00276910F5008FCE1D /* UpdateNoteView.swift in Sources */,
-				4B1B8EF227674E8C008FCE1D /* Folder+CoreDataClass.swift in Sources */,
-				4B1B8EF327674E8C008FCE1D /* Folder+CoreDataProperties.swift in Sources */,
-				4B1B8EF527674E8C008FCE1D /* Note+CoreDataProperties.swift in Sources */,
+				26F4C545276A02C8005E7156 /* Note+CoreDataClass.swift in Sources */,
+				4B1B8F00276910F5008FCE1D /* NoteView.swift in Sources */,
 				4B1B8EFE276910F5008FCE1D /* ADDNoteView.swift in Sources */,
+				26F4C546276A02C8005E7156 /* Note+CoreDataProperties.swift in Sources */,
 				4BD81E70275F7D9A000F5BBE /* DataController.swift in Sources */,
 				4BD81E6A275F7112000F5BBE /* Data.xcdatamodeld in Sources */,
 				4BD81E6E275F7150000F5BBE /* NotesView.swift in Sources */,
@@ -472,10 +464,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Notes/Preview Content\"";
-				DEVELOPMENT_TEAM = 4W9R99S9G2;
+				DEVELOPMENT_TEAM = HBMC4L7SC3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -488,8 +481,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fed.Notes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fed.note;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,10 +495,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Notes/Preview Content\"";
-				DEVELOPMENT_TEAM = 4W9R99S9G2;
+				DEVELOPMENT_TEAM = HBMC4L7SC3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -517,8 +512,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fed.Notes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fed.note;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

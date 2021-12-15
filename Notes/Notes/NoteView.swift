@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct UpdateNoteView: View {
+struct NoteView: View {
     
     let note : Note
     

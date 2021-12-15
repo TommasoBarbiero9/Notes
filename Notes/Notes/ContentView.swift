@@ -31,6 +31,7 @@ struct ContentView: View {
                                         HStack {
                                             Image(systemName: "folder")
                                             
+                                            //Text(folder.wra ppedName)
                                             Text(folder.wrappedName)
                                         }
                                     }

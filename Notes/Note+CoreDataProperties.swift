@@ -2,7 +2,7 @@
 //  Note+CoreDataProperties.swift
 //  Notes
 //
-//  Created by Tommaso Barbiero on 13/12/21.
+//  Created by Francesco Panariello on 15/12/21.
 //
 //
 
@@ -17,13 +17,14 @@ extension Note {
     }
 
     @NSManaged public var content: String?
-    @NSManaged public var title: String?
-    @NSManaged public var folder: Folder?
     @NSManaged public var lastModify: Date?
+    @NSManaged public var title: String?
+    @NSManaged public var inFolder: Folder?
+
+    public var wrappedTitle: String {
+         title ?? "Unknown Title"
+     }
     
-    public var wrappedTitle : String {
-        title ?? "Unknown note title"
-    }
 }
 
 extension Note : Identifiable {

@@ -11,7 +11,6 @@ import CoreData
 struct InFolderView: View {
     let folder: Folder
     
-    
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
@@ -22,6 +21,7 @@ struct InFolderView: View {
     @State private var showingSheet = false
     @State private var searchText = ""
     
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -30,7 +30,7 @@ struct InFolderView: View {
                         NavigationLink {
                             //UpdateNoteView(notetitle: note.title ?? "", notecontent: note.content ?? "")
                             
-                            UpdateNoteView(note: note)
+                            NoteView(note: note)
                             
                             //Text(note.title ?? "Ciao")
                         }label: {

@@ -2,7 +2,7 @@
 //  Folder+CoreDataClass.swift
 //  Notes
 //
-//  Created by Tommaso Barbiero on 13/12/21.
+//  Created by Francesco Panariello on 15/12/21.
 //
 //
 
