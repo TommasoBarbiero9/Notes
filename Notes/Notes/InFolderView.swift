@@ -72,20 +72,20 @@ struct InFolderView: View {
                 }
                     .toolbar {
                         ToolbarItemGroup(placement: .bottomBar) {
-                            ZStack {
-                                HStack(){
-                            Text(".")
-                            
+                            Text("")
+                            Spacer()
+                            Text("\(folder.note!.count) notes")
+                                        .foregroundColor(Color(.systemGray4))
+                            Spacer()
                             NavigationLink(destination: ADDNoteView(folder: folder)) {
                                 Label("Add Item", systemImage: "square.and.pencil")
                             }
                                 }
-                                Text("\(folder.note!.count) notes")
-                                    .foregroundColor(Color(.systemGray4))
-                        }
+                                
                         }
                         
-                    }
+                        
+                    
 //                    .toolbar {
 //                        ToolbarItem(placement: .bottomBar) {
 //

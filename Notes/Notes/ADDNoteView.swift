@@ -10,9 +10,10 @@ import SwiftUI
 struct ADDNoteView: View {
     
     let folder : Folder
+    let screenSize = UIScreen.main.bounds
     
-    @State private var titleText = "Title"
-    @State private var contentText = "Write..."
+    @State private var titleText = "t"
+    @State private var contentText = "t"
     @Environment(\.managedObjectContext) private var moc
     
     
@@ -20,20 +21,18 @@ struct ADDNoteView: View {
         
         VStack{
             TextEditor(text: $titleText)
-//                .padding()
                 .font(.largeTitle.bold())
-                
-            
-            
+                    
             TextEditor(text: $contentText)
                 .foregroundColor(.secondary)
 //                .padding(.horizontal)
         }
+
+        
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(){
                     addItem()
-            
                 }label:{
                     Text("Done")
                 }
