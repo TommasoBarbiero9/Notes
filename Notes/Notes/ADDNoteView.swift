@@ -50,7 +50,7 @@ struct ADDNoteView: View {
             //            newNote.image = ""
             newNote.lastModify = Date()
             
-            folder.addToNote(newNote)
+            newNote.inFolder = folder
             
             try? moc.save()
             

@@ -12,9 +12,13 @@ struct NoteView: View {
     
     let note : Note
     
+    @Environment(\.managedObjectContext) var moc
+    @Environment(\.dismiss) var dismiss
+    
+    
     @State private var titleText = ""
     @State private var contentText = ""
-    @Environment(\.managedObjectContext) var moc
+    
     
     
     var body: some View {
@@ -24,8 +28,6 @@ struct NoteView: View {
                 .onAppear{titleText = note.title ?? ""}
                 .padding()
                 .font(.largeTitle.bold())
-                
-            
             
             TextEditor(text: $contentText)
                 .onAppear{contentText = note.content ?? ""}
@@ -35,7 +37,7 @@ struct NoteView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(){
-                    addItem()
+                    editNote()
             
                 }label:{
                     Text("Done")
@@ -46,14 +48,16 @@ struct NoteView: View {
     }
     
     
-    private func addItem() {
-            deleteNote(note: note)
+    private func editNote() {
+            
+        moc.delete(note)
+        
             let newNote = Note(context: moc)
             newNote.title = titleText
             newNote.content = contentText
 //            newNote.image = ""
             newNote.lastModify = Date()
-            
+        
         try? moc.save()
 //        InFolderView(folder: folder)
 
@@ -83,8 +87,21 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-//struct ModifyView_Previews: PreviewProvider {
+
+//struct NoteView_Previews: PreviewProvider {
+//    static let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+//
 //    static var previews: some View {
-//        ModifyView()
+//
+//      let newNote = Note(context: moc)
+//        newNote.title = "Test book"
+//        newNote.content = "Test author"
+//        newNote.lastModify = Date()
+//
+//
+//        return NavigationView {
+//            NoteView(note: newNote)
+//        }
 //    }
 //}
+//

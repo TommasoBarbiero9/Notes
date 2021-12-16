@@ -9,51 +9,75 @@ import SwiftUI
 import CoreData
 
 struct InFolderView: View {
-    let folder: Folder
+//    let folder: Folder
     
     @Environment(\.managedObjectContext) var moc
     @Environment(\.dismiss) var dismiss
     
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Note.lastModify, ascending: true)],
+    @ObservedObject var folder : Folder
+
+    @FetchRequest( entity: Note.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Note.title, ascending: true)],
         animation: .default) private var notes: FetchedResults<Note>
+    
+    
+    
+        
+    
     
     @State private var showingSheet = false
     @State private var searchText = ""
     
+//    @FetchRequest var notes: FetchedResults<Note>
+//    init(withFolder folder: Folder) {
+//        self.folder = folder
+//        _notes = FetchRequest(
+//            entity: Note.entity(),
+//            sortDescriptors: [
+//                NSSortDescriptor(keyPath: \Note.title, ascending: true)
+//            ],
+//            predicate: NSPredicate(format: "inFolder == %@", folder)
+//        )
+//    }
+    
+    
+    
+    
     
     var body: some View {
-        ScrollView {
             VStack {
                 List {
-                    ForEach(notes) { note in
+                    Section {
+                        ForEach(folder.noteArray) { note in
                         NavigationLink {
                             //UpdateNoteView(notetitle: note.title ?? "", notecontent: note.content ?? "")
-                            
+
                             NoteView(note: note)
-                            
-                            //Text(note.title ?? "Ciao")
+
+//                            Text(note.title ?? "Ciao")
                         }label: {
                             VStack(alignment: .leading){
                                 Text(note.title ?? "TITOLO TEST")
                                     .font(.title3.bold())
                                     .foregroundColor(.black)
-                                HStack(){
+                                HStack{
                                     Text("\(note.lastModify!, formatter: itemFormatter)")
                                         .font(.callout)
                                     Text(note.content ?? "CONTENUTO TEST")
                                         .font(.callout)
                                 }
                                 .foregroundColor(Color(.systemGray))
-                                
+
                             }
-                            
                         }
                     }
+
+                   
+
                     .onDelete(perform: deleteNotes)
-                    
+                    }
                 }
-                
+//
                 
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
@@ -137,7 +161,7 @@ struct InFolderView: View {
             .onChange(of: searchText) { newValue in
                 notes.nsPredicate = searchPredicate(searchText: newValue)
             }
-    }
+            
 }
     
     

@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import CoreData
+
 
 struct ContentView: View {
+    
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var folders: FetchedResults<Folder>
     
