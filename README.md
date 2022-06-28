@@ -1,4 +1,4 @@
 # Notes
-We re-make the notes app in CoreData
+We re-made the notes app using the CoreData framework.
 
 -Tommaso Barbiero & Francesco Panariello
